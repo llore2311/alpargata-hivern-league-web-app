@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Team {
+  id            Int      @id @default(autoincrement())
+  name          String   @unique
+  city          String
+  coach         String
+  logoColor     String
+  wins          Int      @default(0)
+  losses        Int      @default(0)
+  pointsFor     Int      @default(0)
+  pointsAgainst Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  players       Player[]
+  homeGames     Game[]   @relation("HomeTeam")
+  awayGames     Game[]   @relation("AwayTeam")
+}
+
+model Player {
+  id         Int      @id @default(autoincrement())
+  name       String
+  position   String
+  points     Float    @default(0)
+  assists    Float    @default(0)
+  rebounds   Float    @default(0)
+  efficiency Float    @default(0)
+  teamId     Int
+  team       Team     @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([teamId])
+}
+
+model Game {
+  id         Int      @id @default(autoincrement())
+  round      String
+  date       DateTime
+  venue      String
+  status     String
+  homeScore  Int?
+  awayScore  Int?
+  homeTeamId Int
+  awayTeamId Int
+  homeTeam   Team     @relation("HomeTeam", fields: [homeTeamId], references: [id], onDelete: Restrict)
+  awayTeam   Team     @relation("AwayTeam", fields: [awayTeamId], references: [id], onDelete: Restrict)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([date])
+  @@index([homeTeamId])
+  @@index([awayTeamId])
+}

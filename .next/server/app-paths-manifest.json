@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/calendario/page": "app/calendario/page.js",
+  "/partidos/page": "app/partidos/page.js",
+  "/clasificaciones/page": "app/clasificaciones/page.js",
+  "/estadisticas/page": "app/estadisticas/page.js",
+  "/equipos/page": "app/equipos/page.js",
+  "/jugadores/page": "app/jugadores/page.js",
+  "/reglamento/page": "app/reglamento/page.js"
+}
