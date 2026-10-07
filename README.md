@@ -46,8 +46,8 @@ npm run dev
 - Cliente Prisma reutilizable en `lib/prisma.ts`
 - Variables de conexion listas en `.env.example`
 - Seed inicial en `prisma/seed.js` con:
-  - 4 equipos
-  - 8 jugadores por equipo (32 jugadores en total)
+  - 8 equipos: CB Ciutadella, Ferreries, Mercadal, Alaior, Alcázar A, Sant Lluís, Es Castell y Alcázar B
+  - 8 jugadores por equipo (64 jugadores en total)
   - partidos de liga
 
 Cuando quieras integrar datos reales:
@@ -57,3 +57,7 @@ npm run prisma:generate
 npm run db:push
 npm run db:seed
 ```
+
+El seed conserva los equipos, jugadores y partidos existentes. Actualiza los nombres
+y ciudades de los equipos originales y crea únicamente los equipos y plantillas
+que faltan; se puede ejecutar de nuevo sin duplicar datos.

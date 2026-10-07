@@ -27,7 +27,7 @@ export default async function HomePage() {
         <h1>Todo el torneo en una sola web</h1>
         <p>
           Sigue calendario, resultados, clasificacion y estadisticas del torneo
-          de baloncesto Alpargata Hivern, con datos reales cargados desde Neon
+          de baloncesto Old School League, con datos reales cargados desde Neon
           mediante Prisma.
         </p>
       </article>

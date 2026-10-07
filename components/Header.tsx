@@ -21,10 +21,10 @@ export function Header() {
     <header className="site-header">
       <div className="brand-row">
         <div>
-          <h1 className="brand-title">Alpargata Hivern League</h1>
+          <h1 className="brand-title">Old School League</h1>
           <p className="brand-subtitle">Torneo anual de baloncesto</p>
         </div>
-        <div className="brand-badge">AH</div>
+        <div className="brand-badge">OSL</div>
       </div>
 
       <nav className="nav-row" aria-label="Navegacion principal">

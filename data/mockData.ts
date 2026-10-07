@@ -44,8 +44,8 @@ export type RuleSection = {
 export const teams: Team[] = [
   {
     id: 1,
-    name: "Lobos Barcelona",
-    city: "Barcelona",
+    name: "CB Ciutadella",
+    city: "Ciutadella",
     coach: "Sergio Mena",
     wins: 8,
     losses: 2,
@@ -55,8 +55,8 @@ export const teams: Team[] = [
   },
   {
     id: 2,
-    name: "Titanes Madrid",
-    city: "Madrid",
+    name: "Ferreries",
+    city: "Ferreries",
     coach: "Daniel Vico",
     wins: 7,
     losses: 3,
@@ -66,8 +66,8 @@ export const teams: Team[] = [
   },
   {
     id: 3,
-    name: "Atleticos Valencia",
-    city: "Valencia",
+    name: "Mercadal",
+    city: "Es Mercadal",
     coach: "Victor Cea",
     wins: 7,
     losses: 3,
@@ -77,8 +77,8 @@ export const teams: Team[] = [
   },
   {
     id: 4,
-    name: "Dragones Sevilla",
-    city: "Sevilla",
+    name: "Alaior",
+    city: "Alaior",
     coach: "Ruben Nieto",
     wins: 6,
     losses: 4,
@@ -88,8 +88,8 @@ export const teams: Team[] = [
   },
   {
     id: 5,
-    name: "Piratas Bilbao",
-    city: "Bilbao",
+    name: "Alcázar A",
+    city: "Maó",
     coach: "Aitor Landa",
     wins: 5,
     losses: 5,
@@ -99,8 +99,8 @@ export const teams: Team[] = [
   },
   {
     id: 6,
-    name: "Halcones Zaragoza",
-    city: "Zaragoza",
+    name: "Sant Lluís",
+    city: "Sant Lluís",
     coach: "Ivan Bernal",
     wins: 4,
     losses: 6,
@@ -110,8 +110,8 @@ export const teams: Team[] = [
   },
   {
     id: 7,
-    name: "Guerreros Malaga",
-    city: "Malaga",
+    name: "Es Castell",
+    city: "Es Castell",
     coach: "Pablo Llorca",
     wins: 3,
     losses: 7,
@@ -121,8 +121,8 @@ export const teams: Team[] = [
   },
   {
     id: 8,
-    name: "Fenix Girona",
-    city: "Girona",
+    name: "Alcázar B",
+    city: "Maó",
     coach: "Adrian Blasco",
     wins: 2,
     losses: 8,
@@ -139,8 +139,8 @@ export const games: Game[] = [
     date: "2026-03-20",
     time: "19:30",
     venue: "Palau Nord",
-    homeTeam: "Lobos Barcelona",
-    awayTeam: "Titanes Madrid",
+    homeTeam: "CB Ciutadella",
+    awayTeam: "Ferreries",
     status: "Programado"
   },
   {
@@ -149,8 +149,8 @@ export const games: Game[] = [
     date: "2026-03-21",
     time: "18:00",
     venue: "Pabellon Turia",
-    homeTeam: "Atleticos Valencia",
-    awayTeam: "Dragones Sevilla",
+    homeTeam: "Mercadal",
+    awayTeam: "Alaior",
     status: "Programado"
   },
   {
@@ -159,8 +159,8 @@ export const games: Game[] = [
     date: "2026-03-21",
     time: "20:15",
     venue: "Arena Cantabrico",
-    homeTeam: "Piratas Bilbao",
-    awayTeam: "Halcones Zaragoza",
+    homeTeam: "Alcázar A",
+    awayTeam: "Sant Lluís",
     status: "Programado"
   },
   {
@@ -169,8 +169,8 @@ export const games: Game[] = [
     date: "2026-03-22",
     time: "12:00",
     venue: "Ciudad Deportiva Sur",
-    homeTeam: "Guerreros Malaga",
-    awayTeam: "Fenix Girona",
+    homeTeam: "Es Castell",
+    awayTeam: "Alcázar B",
     status: "Programado"
   },
   {
@@ -179,8 +179,8 @@ export const games: Game[] = [
     date: "2026-03-14",
     time: "18:30",
     venue: "Palacio Central",
-    homeTeam: "Titanes Madrid",
-    awayTeam: "Atleticos Valencia",
+    homeTeam: "Ferreries",
+    awayTeam: "Mercadal",
     status: "Finalizado",
     homeScore: 82,
     awayScore: 76
@@ -191,8 +191,8 @@ export const games: Game[] = [
     date: "2026-03-13",
     time: "20:00",
     venue: "Pabellon Aljarafe",
-    homeTeam: "Dragones Sevilla",
-    awayTeam: "Lobos Barcelona",
+    homeTeam: "Alaior",
+    awayTeam: "CB Ciutadella",
     status: "Finalizado",
     homeScore: 74,
     awayScore: 88
@@ -203,8 +203,8 @@ export const games: Game[] = [
     date: "2026-03-13",
     time: "20:45",
     venue: "Pabellon Ebro",
-    homeTeam: "Halcones Zaragoza",
-    awayTeam: "Guerreros Malaga",
+    homeTeam: "Sant Lluís",
+    awayTeam: "Es Castell",
     status: "Finalizado",
     homeScore: 79,
     awayScore: 71
@@ -215,8 +215,8 @@ export const games: Game[] = [
     date: "2026-03-12",
     time: "19:15",
     venue: "Girona Arena",
-    homeTeam: "Fenix Girona",
-    awayTeam: "Piratas Bilbao",
+    homeTeam: "Alcázar B",
+    awayTeam: "Alcázar A",
     status: "Finalizado",
     homeScore: 67,
     awayScore: 83
@@ -227,7 +227,7 @@ export const players: Player[] = [
   {
     id: 1,
     name: "Jaime Navarro",
-    team: "Lobos Barcelona",
+    team: "CB Ciutadella",
     position: "Base",
     points: 19.4,
     assists: 7.8,
@@ -237,7 +237,7 @@ export const players: Player[] = [
   {
     id: 2,
     name: "Rafa Tena",
-    team: "Titanes Madrid",
+    team: "Ferreries",
     position: "Escolta",
     points: 22.1,
     assists: 4.3,
@@ -247,7 +247,7 @@ export const players: Player[] = [
   {
     id: 3,
     name: "Luis Miret",
-    team: "Atleticos Valencia",
+    team: "Mercadal",
     position: "Alero",
     points: 17.8,
     assists: 3.9,
@@ -257,7 +257,7 @@ export const players: Player[] = [
   {
     id: 4,
     name: "Nico Pardo",
-    team: "Dragones Sevilla",
+    team: "Alaior",
     position: "Ala-pivot",
     points: 16.9,
     assists: 2.4,
@@ -267,7 +267,7 @@ export const players: Player[] = [
   {
     id: 5,
     name: "Mikel Ochoa",
-    team: "Piratas Bilbao",
+    team: "Alcázar A",
     position: "Pivot",
     points: 14.3,
     assists: 1.8,
@@ -277,7 +277,7 @@ export const players: Player[] = [
   {
     id: 6,
     name: "Ivan Pozo",
-    team: "Halcones Zaragoza",
+    team: "Sant Lluís",
     position: "Escolta",
     points: 15.1,
     assists: 4.7,
@@ -287,7 +287,7 @@ export const players: Player[] = [
   {
     id: 7,
     name: "Dario Cardenas",
-    team: "Guerreros Malaga",
+    team: "Es Castell",
     position: "Alero",
     points: 18.2,
     assists: 2.8,
@@ -297,7 +297,7 @@ export const players: Player[] = [
   {
     id: 8,
     name: "Pau Isern",
-    team: "Fenix Girona",
+    team: "Alcázar B",
     position: "Base",
     points: 13.6,
     assists: 6.5,
